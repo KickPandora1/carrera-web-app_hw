@@ -16,16 +16,23 @@ import { FormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 //Componentes
 import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { HeaderAppComponent } from './parcials/header-app/header-app.component';
+import { LeftSidebarComponent } from './parcials/left-sidebar/left-sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginScreenComponent,
     RegistroScreenComponent,
-    HomeScreenComponent
+    HomeScreenComponent,
+    HeaderAppComponent,
+    LeftSidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,10 @@ import { HomeScreenComponent } from './screens/home-screen/home-screen.component
     FormsModule,
     MatNativeDateModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatProgressSpinnerModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
